@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/cadastro.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form>
+                <h1>Formulário de cadastro</h1>
+                <div id="nomeCompleto">
+                    <h2>Nome completo</h1>
+                    <input type="text" name="nome" id="primeiroNome" placeholder="Primeiro nome">
+                    <input type="text" name="nome" id="ultimoNome" placeholder="Ultimo nome">
+                </div>
+
+                <div id="genero">
+                    <h2>Qual gênero você se identidica</h1>
+                    <input type="radio" name="genero" id="genero1" value="Masculino">
+                    <label for="Masculino">Masculino</label><br>
+                    <input type="radio" name="genero" id="genero2" value="Feminino">
+                    <label for="Feminino">Feminino</label><br>
+                    <input type="radio" name="genero" id="genero3" value="Outros">
+                    <label for="Outros">Outros</label><br>
+                </div>
+
+                <div>
+                    <h2>Cadastre um email <strong>válido</strong></h2>
+                    <input type="email" name="email" id="imail" placeholder="Email">
+                </div>
+
+                <div id="senha">
+                    <h2>Cadastre uma senha</h2>
+                    <input type="password" name="password" id="password" placeholder="Senha">
+                    <p>Confirme a sua senha</p>
+                    <input type="password" name="password" id="passwordConfirmada" placeholder="senha">
+                </div>
+
+                <div id="dataNascimento">
+                    <h2>Data de nascimento</h2>
+                    <label for="aniversario">Aniversário:</label>
+                    <input type="date" id="aniversario" name="aniversario">
+                </div>
+
+                <div id="numero">
+                    <h2>Número de telefone</h2>
+                    <label for="telefone">Número de telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">
+                </div>
+                
+                <input type="submit" value="enviar" id="enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
