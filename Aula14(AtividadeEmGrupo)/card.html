@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina em cards</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+
+    <script src="./Script/CelciusEmKelvin.js"></script>
+    <script src="./Script/calculadora.js"></script>
+    <script src="./Script/parImpar.js"></script>
+    <script src="./Script/realPareDolar.js"></script>
+    <script src="./Script/dolarParaReal.js"></script>
+    <script src="./Script/IMC.js"></script>
+    <script src="./Script/CPF.js"></script>
+    <script src="./Script/verificarNumeros.js"></script>
+    <script src="./Script/Triangulo.js"></script>
+    <script src="./Script/DivisaoInteira.js"></script>
+    
+    
+</head>
+<body>
+    <main>
+        <div class="card1">
+            <h1>Converter Celcius em Kelvin</h1>
+            <div class="input">
+                <input type="text" id="entrada1" placeholder="Digite a temperatura em Celcius">
+            </div>
+
+            
+            <div class="button">
+                <button id="button1" onclick="celciusKelvin()">calcular</button>
+            </div>
+            <h2>Resultado: <span id="resultado1"></span></h2>
+        </div>
+
+
+        <div class="card2">
+            <h1>Calculadora</h1>
+            <div class="input">
+                <input type="text" id="num1" placeholder="Digite um numero">
+            </div>
+            <div class="input">
+                <input type="text" id="num2" placeholder="Digite um numero">
+            </div>
+
+            
+            <div class="button">
+                <button id="adicao" onclick="calculadora(event)">+</button>
+                <button id="subtracao" onclick="calculadora(event)">-</button>
+                <button id="multiplicacao" onclick="calculadora(event)">*</button>
+                <button id="divisao" onclick="calculadora(event)">/</button>
+            </div>
+            <h2>Resultado: <span id="resultado2"></span></h2>
+        </div>
+
+
+        <div class="card3">
+            <h1>Par ou Impar</h1>
+            <div class="input">
+                <input type="text" id="entradaParImpar" placeholder="Digite um numero">
+            </div>
+            
+            <div class="button">
+                <button id="button3" onclick="verificar()">verificar</button>
+            </div>
+            <h2>Resultado: <span id="resultado3"></span></h2>
+        </div>
+
+
+        <div class="card4">
+            <h1>Conversão: Real para Dolar</h1>
+            <div class="input">
+                <input type="text" id="entrada4" placeholder="Digite um numero">
+            </div>
+            
+            <div class="button">
+                <button id="button4" onclick="realDolar()">Converter</button>
+            </div>
+            <h2>Resultado: <span id="resultado4"></span></h2>
+        </div>
+
+
+        <div class="card5">
+            <h1>Conversão: Dolar para Real</h1>
+            <div class="input">
+                <input type="text" id="entrada5" placeholder="Digite um numero">
+            </div>
+            
+            <div class="button">
+                <button id="button5" onclick="dolarReal()">Converter</button>
+            </div>
+            <h2>Resultado: <span id="resultado5"></span></h2>
+        </div>
+
+
+        <div class="card6">
+            <h1>Calculo do IMC</h1>
+            <div class="input">
+                <input type="text" id="entradaPeso" placeholder="Digite o seu peso ex: 65">
+            </div>
+            <div class="input">
+                <input type="text" id="entradaAltura" placeholder="Digite a sua altura ex: 1.72">
+            </div>
+            
+            <div class="button">
+                <button id="button6" onclick="calcIMC()">calcular</button>
+            </div>
+            <h2>Resultado: <span id="resultado6"></span></h2>
+        </div>
+
+
+        <div class="card7">
+            <h1>Emissão do CPF</h1>
+            <div class="input">
+                <input type="text" id="entrada7" placeholder="Digite seu CPF apenas numeros">
+            </div>
+            
+            <div class="button">
+                <button id="button7" onclick="validarCPF()">Verificar</button>
+                <h2>Resultado: <span id="resultado7"></span></h2>
+            </div>
+        </div>
+
+
+        <div class="card8">
+            <h1 id="titulo8">Numero Maior e Menor</h1>
+            <div class="input">
+                <input type="text" id="entrada8.0" placeholder="Digite um numero">
+            </div>
+            <div class="input">
+                <input type="text" id="entrada8.1" placeholder="Digite um numero">
+            </div>
+            <div class="input">
+                <input type="text" id="entrada8.2" placeholder="Digite um numero">
+            </div>
+
+            
+            <div class="button">
+                <button id="button8" onclick="verificar3numeros()">verificar</button>
+            </div>
+            <h2>Resultado: <span id="resultado8"></span></h2>
+        </div>
+
+
+        <div class="card9">
+            <h1>Tipo de Triangulo</h1>
+            <div class="input">
+                <input type="text" id="entrada9.0" placeholder="Digite o valor da primeira vértice">
+            </div>
+            <div class="input">
+                <input type="text" id="entrada9.1" placeholder="Digite o valor da segunda vértice">
+            </div>
+            <div class="input">
+                <input type="text" id="entrada9.2" placeholder="Digite o valor da terceira vértice">
+            </div>
+            
+            <div class="button">
+                <button id="button9" onclick="tipoTriangulo()">Verificar</button>
+            </div>
+            <h2>Resultado: <span id="resultado9"></span></h2>
+        </div>
+
+
+        <div class="card10">
+            <h1>Divisão inteira</h1>
+            <div class="input">
+                <input type="text" id="dividendo" placeholder="Digite o valor do dividendo">
+            </div>
+            <div class="input">
+                <input type="text" id="divisor" placeholder="Digite o valor do divisor">
+            </div>
+
+            <div class="button">
+                <button id="button10" onclick="divisaoInteira()">Verificar</button>
+            </div>
+
+            <h2>Resultado: <span id="resultado10"></span></h2>
+        </div>
+    </main>
+</body>
+</html>
