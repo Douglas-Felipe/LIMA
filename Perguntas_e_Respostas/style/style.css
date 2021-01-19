@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: auto;
+}
+body{
+    background-image: url("../img/waifu.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 70%;
+    height: 90%;
+    margin: 20px;
+    padding-bottom: 75px;
+}
+section > #divMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+/* Formatação das imagens */
+img{
+    width: 98%;
+    height: 205px;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 117, 107, 0.7)
+}
+#StartButton{
+    margin-top: 5px;
+    width: 20%;
+    height: 40px;
+}
+
+#pontosFinal{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    width: 40%;
+    font-size: 15pt;
+}
+#enviarRespostas{
+    width: 63%;
+    height: 40px;
+}
+
+span{
+    background-color:  rgba(255, 237, 227, 0.7)
+}
+
+/* Div que contem as classes */
+.card{
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 400px;
+    height: 350px;
+    background-color: rgba(255, 186, 181, 0.55)
+}
+
+
+/* Efeito de Flip */
+#switch0:checked ~ .flip-container .flipper, #switch1:checked ~ .flip-container .flipper, #switch2:checked ~ .flip-container .flipper,
+#switch3:checked ~ .flip-container .flipper, #switch4:checked ~ .flip-container .flipper, #switch5:checked ~ .flip-container .flipper, 
+#switch7:checked ~ .flip-container .flipper, #switch8:checked ~ .flip-container .flipper, #switch9:checked ~ .flip-container .flipper,
+#switch6:checked ~ .flip-container .flipper, #switch10:checked ~ .flip-container .flipper, #switch11:checked ~ .flip-container .flipper{
+    transform: rotateY(180deg);
+}
+/* Tempo para a transição */
+.flipper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+
+/* Definindo a posição da parte da frente e do fundo
+para uma ficar em cima da outra */
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* Deixando uma imagem "atrás" da outras */
+    backface-visibility: hidden;
+}
+
+/* Arrumando a orienta;'ao da imagem, para ela
+não ficar invertida */
+.back{
+    transform:rotateY(180deg)
+}
+
+/* Deixando o checkbox invisivel */
+#switch1, #switch2, #switch3, #switch4, #switch5, #switch6,
+#switch7, #switch8, #switch9, #switch10, #switch11, #switch0{
+    display: none;
+}
+
+#pontosFinal{
+position: relative;
+align-self: flex-end;
+}
+
