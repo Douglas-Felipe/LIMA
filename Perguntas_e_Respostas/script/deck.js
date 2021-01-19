@@ -13,7 +13,7 @@ var deck = [
 
     {
         pergunta: "Qual o nome da seguinte waifu?",
-        img: "./img/akame.png",
+        img: "./img/Akame.png",
         alternativa1: "C.C",
         alternativa2: "Akame",
         alternativa3: "Uraraka",
