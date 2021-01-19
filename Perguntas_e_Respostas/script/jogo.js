@@ -54,7 +54,7 @@ function EnviarRespostas(){
         <button id="enviarRespostas" onclick="EnviarRespostas()" >Enviar respostas</button>
         <span id="recorde">Recorde:</span>
         <span id="pontos">Pontuação: </span>
-        <img src="../img/obgPorJogar.gif" alt="Gif de agradecimento">
+        <img src="./img/obgPorJogar.gif" alt="Gif de agradecimento">
     `
     // Verifica se a pontuação é um novo recorde
     if (pontosResposta > pontos)
