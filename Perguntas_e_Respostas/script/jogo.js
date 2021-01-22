@@ -62,14 +62,14 @@ function EnviarRespostas(){
         nome = prompt("Novo recorde, registre o nickname:")
         localStorage.setItem("nomeRecorde", nome)
         localStorage.setItem("recorde", pontosResposta)
-        document.getElementById("recorde").textContent = `Novo Recorde de ${localStorage.getItem("nomeRecorde")}: ${localStorage.getItem("recorde")} pontos`
+        document.getElementById("recorde").textContent = `Novo Recorde de ${localStorage.getItem("nomeRecorde")}: ${localStorage.getItem("recorde")} pontos/270`
 
     }
     else
     {
-        document.getElementById("recorde").textContent = `Recorde atual de ${localStorage.getItem("nomeRecorde")}: ${localStorage.getItem("recorde")} pontos`
+        document.getElementById("recorde").textContent = `Recorde atual de ${localStorage.getItem("nomeRecorde")}: ${localStorage.getItem("recorde")} pontos/270`
     }
-    document.getElementById("pontos").textContent = `Sua pontuação foi: ${pontosResposta} pontos`
+    document.getElementById("pontos").textContent = `Sua pontuação foi: ${pontosResposta} pontos/270`
 
     StartGame()
 }
